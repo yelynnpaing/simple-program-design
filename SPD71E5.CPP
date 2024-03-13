@@ -9,6 +9,7 @@
 				12_hours_time = 24_hours_time - 1200
 			ELSE
 				12_hours_time = 24_hours_time
+			ENDIF
 			Display 12_hours_time
 		UNTIL 24_hours_time = 9999
 	END
