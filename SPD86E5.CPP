@@ -8,18 +8,17 @@
 	4 set total_net_earnings to zero
 	5 Read employee_record_file
 	6 DOWHILE  employee_record_file is exist
-	 {
-		gross_earning = worked_hour * pay_rate;
-		Add gross_earnings to total_gross_earning
-		tax_payable = gross_earning * 0.15;
-		Add tax_payable to total_tax_payable;
-		medical_levy = gross_earning * 0.01;
-		Add medical_levy to total_medical_levy;
-		net_earning = gross_earning - (tax_payable + medical_levy);
-		Add net_earning to total_net_earning;
+	7	gross_earning = worked_hour * pay_rate;
+	8	Add gross_earnings to total_gross_earning
+	9	tax_payable = gross_earning * 0.15;
+	10	Add tax_payable to total_tax_payable;
+	11	medical_levy = gross_earning * 0.01;
+	12	Add medical_levy to total_medical_levy;
+	13	net_earning = gross_earning - (tax_payable + medical_levy);
+	14	Add net_earning to total_net_earning;
 	15	Print gross_earning, tax_payable, medical_levy, net_earning
 	16	Read employee_record_file
-	}
+	  ENDDO
 	17 Print total_gross_earning, total_tax_payable,
 	   total_medical_levy, total_net_earning
 	END
