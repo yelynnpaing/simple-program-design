@@ -15,6 +15,8 @@
 			Read employee_time_cards
 		ENDDO
 		average_paid = total_payroll_amount / total_employee
+		Display total_payroll_amount, average_paid
+	END
 */
 /* -------------------------------------------------------------------- */
 /*
