@@ -74,12 +74,12 @@ void main()
 	else
 	{
 		if(month == 2){
-			if(day > 0 && day <= 28)
+			if(day > 0 && day <= 28){
 				cout << endl << year << " % 4 != 0. So this not a leap year. ";
 				cout << endl << day << " is validate day.";
+			}
 			else
 				cout << endl << day << " is invalid day format.";
-
 		}
 		else
 		{
